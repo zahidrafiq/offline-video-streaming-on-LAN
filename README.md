@@ -2,9 +2,9 @@
 This Repositry is for offline Video streaming on Local Area Network.
 Required Tools
 1. Nodejs
-2. Fidler (To Access from other stsyem on LAN)
+2. Fiddler (To Access from other stsyem on LAN)
 
-Setup:
+Setup to Follow:
 1. Clone/Download this repositry.
 2. In main Folder(That contains index.js file), run Command Prompt.
 3. Run following command:
