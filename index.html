@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+
+
+</style>
+  <title>Telemedicine</title>
+
+  <link rel="stylesheet" href="/css/main.css" />
+
+</head>
+
+<body>
+
+	<div style="width: 20%;bottom: 1%;right: 1%; z-index: 5;" class="video-box" id="localStream">
+		<span class="video-header">Local Stream</span><br>
+	   <video id="localVideo" autoplay muted></video>
+	</div>
+	<div style="left: 1%;top: 5%;height: 90%;width: 72%;" class="video-box" id="remoteStream"> 
+		<span class="video-header">Remote Stream</span><br>
+		<video id="remoteVideo" autoplay></video>
+	</div>
+ 
+  <script src="/socket.io/socket.io.js"></script>
+  
+  <script src="js/adapter-latest.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/drag.js"></script>
+  
+</body>
+
+</html>

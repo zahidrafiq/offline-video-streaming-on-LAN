@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+}
+
+video {
+  width: 100%;
+}
+
+.video-header
+{
+	width: 100%;
+    max-width: -webkit-fill-available;
+    text-align: center;
+    display: inline-block;
+    padding: 0.7em 0em;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+.video-box {
+  position: absolute;
+  background-color: transparent;
+  border: 0px solid black;
+
+}
