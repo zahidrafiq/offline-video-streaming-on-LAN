@@ -6,7 +6,7 @@ Required Tools
 
 Setup to Follow:
 1. Clone/Download this repositry.
-2. In main Folder(That contains index.js file), run Command Prompt.
+2. In main Folder(That contains index.js file), open Command Prompt.
 3. Run following command:
     node index.js
 4. Open Browser and go to:
