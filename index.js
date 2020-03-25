@@ -8,7 +8,7 @@ var socketIO = require('socket.io');
 var fileServer = new(nodeStatic.Server)();
 var app = http.createServer(function(req, res) {
   fileServer.serve(req, res);
-}).listen(8080);
+}).listen(8080,'0.0.0.0');
 
 var io = socketIO.listen(app);
 io.sockets.on('connection', function(socket) {
@@ -54,7 +54,7 @@ io.sockets.on('connection', function(socket) {
     var ifaces = os.networkInterfaces();
     for (var dev in ifaces) {
       ifaces[dev].forEach(function(details) {
-        if (details.family === 'IPv4' && details.address !== '127.0.0.1') {
+        if (details.family === 'IPv4' && (details.address !== '127.0.0.1' || details.address !== '0.0.0.0')) {
           socket.emit('ipaddr', details.address);
         }
       });

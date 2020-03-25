@@ -22,10 +22,12 @@ var sdpConstraints = {
 
 /////////////////////////////////////////////
 
-var room = 'foo';
-// Could prompt for room name:
-// room = prompt('Enter room name:');
-
+var room;
+room = prompt('Enter room name:');
+if(!room)
+{
+	room = "R1";
+}	
 var socket = io.connect();
 
 if (room !== '') {
@@ -246,6 +248,7 @@ function hangup() {
 
 function handleRemoteHangup() {
   console.log('Session terminated.');
+  alert('Session terminated.');
   stop();
   isInitiator = false;
 }
